@@ -1,0 +1,7 @@
+<div *ngIf="isActive,else elsepart">Event Binding if with condition.</div>
+<ng-template #elsepart>
+    <div>
+        <h3>Else Part working </h3>
+    </div>
+</ng-template>
+<button class="btn btn-success" [class.hidden]="isActive" (click)="onclick()">Click for Else condition</button>
