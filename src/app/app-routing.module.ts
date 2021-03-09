@@ -10,6 +10,8 @@ import { StyleBindingComponent } from './components/dataBinding/style-binding/st
 import { InterPolationComponent } from './components/dataBinding/inter-polation/inter-polation.component';
 import { TwowayDataBindingComponent } from './components/dataBinding/twoway-data-binding/twoway-data-binding.component';
 import { EventBindingComponent } from './components/dataBinding/event-binding/event-binding.component';
+import { ReactformComponent } from './components/reactform/reactform.component';
+import { GetApiComponent } from './components/get-api/get-api.component';
 
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
@@ -20,9 +22,11 @@ const appRoutes: Routes = [
   { path: 'ClassBinding',component: ClassbindingComponent },
   { path: 'StyleBinding',component: StyleBindingComponent },
   { path: 'EventBinding',component: EventBindingComponent },
-  
+  { path: 'EventBinding',component: EventBindingComponent },
   { path: 'InterPolation',component: InterPolationComponent },
   { path: 'TwowayDataBinding',component: TwowayDataBindingComponent },
+  { path: 'ReactiveForm',component: ReactformComponent },
+  { path: 'ApiCall',component: GetApiComponent },
 ];
 
 @NgModule({
