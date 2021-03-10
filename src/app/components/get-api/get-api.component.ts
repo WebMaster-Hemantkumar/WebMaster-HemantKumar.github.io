@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import{ApiCallService} from '../../services/api-call.service'
 @Component({
   selector: 'app-get-api',
   templateUrl: './get-api.component.html',
@@ -7,14 +7,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GetApiComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private ApiCallService: ApiCallService) { }
   users:any;
  
-  ngOnInit(): void {
-  this.http.get("https://jsonplaceholder.typicode.com/users").subscribe((data)=>{
-    this.users=data;
+  ngOnInit() {
+    
+ this.ApiCallService.getAllData().subscribe(data=>{
+   this.users=data;
+ })
 
-  })
+  
     }
 
   }

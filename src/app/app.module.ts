@@ -15,6 +15,7 @@ import { EventBindingComponent } from './components/dataBinding/event-binding/ev
 import { ReactformComponent } from './components/reactform/reactform.component';
 import { GetApiComponent } from './components/get-api/get-api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     EventBindingComponent,
     ReactformComponent,
     GetApiComponent,
+    RouteParameterComponent,
     
   ],
   imports: [

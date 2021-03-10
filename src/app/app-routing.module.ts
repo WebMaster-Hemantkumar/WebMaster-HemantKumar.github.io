@@ -12,6 +12,7 @@ import { TwowayDataBindingComponent } from './components/dataBinding/twoway-data
 import { EventBindingComponent } from './components/dataBinding/event-binding/event-binding.component';
 import { ReactformComponent } from './components/reactform/reactform.component';
 import { GetApiComponent } from './components/get-api/get-api.component';
+import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
 
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
@@ -26,9 +27,10 @@ const appRoutes: Routes = [
   { path: 'InterPolation',component: InterPolationComponent },
   { path: 'TwowayDataBinding',component: TwowayDataBindingComponent },
   { path: 'ReactiveForm',component: ReactformComponent },
-  { path: 'ApiCall',component: GetApiComponent },
+  { path: 'users',component: GetApiComponent },
+  { path: 'user/:id',component: RouteParameterComponent },
 ];
-
+  
 @NgModule({
   imports: [
     RouterModule.forRoot(

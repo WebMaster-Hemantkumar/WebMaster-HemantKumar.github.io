@@ -1,19 +1,24 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
+      
         <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">city</th>
+        <th scope="col">email</th>
+        <th scope="col">website</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
-        <th scope="row"><a [routerLink]="['/user',user.id]">{{user.id}}</a> </th>
+      <tr>
+      
         <td>{{user.name}}</td>
         <td>{{user.address.city}}</td>
+        
         <td>{{user.email}}</td>
+        <td>{{user.website}}</td>
+
       </tr>
     
     </tbody>
   </table>
+  {{user|json}}
