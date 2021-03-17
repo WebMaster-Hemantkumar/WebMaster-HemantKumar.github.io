@@ -16,6 +16,7 @@ import { ReactformComponent } from './components/reactform/reactform.component';
 import { GetApiComponent } from './components/get-api/get-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
+import { NgstyleComponent } from './components/directive/ngstyle/ngstyle.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { RouteParameterComponent } from './components/route-parameter/route-para
     ReactformComponent,
     GetApiComponent,
     RouteParameterComponent,
+    NgstyleComponent,
     
   ],
   imports: [

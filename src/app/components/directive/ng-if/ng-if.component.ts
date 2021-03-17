@@ -15,4 +15,5 @@ export class NgIfComponent implements OnInit {
   clickForLogin(){
     this.isValid=true;
   }
+  
 }

@@ -13,7 +13,7 @@ import { EventBindingComponent } from './components/dataBinding/event-binding/ev
 import { ReactformComponent } from './components/reactform/reactform.component';
 import { GetApiComponent } from './components/get-api/get-api.component';
 import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
-
+import{NgstyleComponent} from './components/directive/ngstyle/ngstyle.component'
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
   { path: 'ngIf',component: NgIfComponent },
@@ -22,6 +22,8 @@ const appRoutes: Routes = [
   { path: 'PropertyBinding',component: PropertyBindingComponent },
   { path: 'ClassBinding',component: ClassbindingComponent },
   { path: 'StyleBinding',component: StyleBindingComponent },
+  { path: 'ngStyle',component: NgstyleComponent },
+  
   { path: 'EventBinding',component: EventBindingComponent },
   { path: 'EventBinding',component: EventBindingComponent },
   { path: 'InterPolation',component: InterPolationComponent },
