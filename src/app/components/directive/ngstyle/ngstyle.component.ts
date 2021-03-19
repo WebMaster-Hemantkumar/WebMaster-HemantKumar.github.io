@@ -13,4 +13,9 @@ export class NgstyleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  task={
+    title:"Web Development",
+    assignee:{name:"Amit"}
+  }
+
 }
