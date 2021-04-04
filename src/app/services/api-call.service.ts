@@ -12,6 +12,13 @@ export class ApiCallService {
     return this.http.get(this.dataUrl);
   }
 
+  countryData = 'src/assets/Country.json';
+
+  getAllCountry() {
+  return this.http.get(this.countryData);
+   }
+
+
   getDataById(id:number){
     return this.http.get(this.dataUrl+id);
   }

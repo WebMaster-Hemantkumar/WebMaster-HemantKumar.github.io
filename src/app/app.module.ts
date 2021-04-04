@@ -17,6 +17,12 @@ import { GetApiComponent } from './components/get-api/get-api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
 import { NgstyleComponent } from './components/directive/ngstyle/ngstyle.component';
+import { NgForWithPushComponent } from './components/directive/ng-for-with-push/ng-for-with-push.component';
+import { PostApiComponent } from './components/post-api/post-api.component';
+import { FormsModule } from '@angular/forms';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +39,18 @@ import { NgstyleComponent } from './components/directive/ngstyle/ngstyle.compone
     GetApiComponent,
     RouteParameterComponent,
     NgstyleComponent,
+    NgForWithPushComponent,
+    PostApiComponent,
+    ParentComponent,
+    ChildComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

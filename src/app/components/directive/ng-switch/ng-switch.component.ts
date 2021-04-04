@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ApiCallService} from '../../../services/api-call.service'
+import {ApiCallService} from '../../../services/api-call.service';
+import{Router} from  '@angular/router';
 @Component({
   selector: 'app-ng-switch',
   templateUrl: './ng-switch.component.html',
@@ -7,7 +8,7 @@ import {ApiCallService} from '../../../services/api-call.service'
 })
 export class NgSwitchComponent implements OnInit {
   
-  constructor(private ApiCallService:ApiCallService ) { }
+  constructor(private ApiCallService:ApiCallService,private router:Router ) { }
   selectedCounrty: any;
   username:any;
   ngOnInit() {
@@ -21,6 +22,15 @@ export class NgSwitchComponent implements OnInit {
  onOptionsSelected(name:string){
     console.log("the selected value is " + name);
     this.username=name
+  }
+
+  
+// code for queryParameter
+  submit(){
+    this.router.navigate(['/users'],
+    {
+queryParams:{page:1,id:2}
+    });
   }
 }
 

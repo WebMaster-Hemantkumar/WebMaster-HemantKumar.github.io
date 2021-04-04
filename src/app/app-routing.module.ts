@@ -13,7 +13,12 @@ import { EventBindingComponent } from './components/dataBinding/event-binding/ev
 import { ReactformComponent } from './components/reactform/reactform.component';
 import { GetApiComponent } from './components/get-api/get-api.component';
 import { RouteParameterComponent } from './components/route-parameter/route-parameter.component';
-import{NgstyleComponent} from './components/directive/ngstyle/ngstyle.component'
+import{NgstyleComponent} from './components/directive/ngstyle/ngstyle.component';
+import { NgForWithPushComponent } from './components/directive/ng-for-with-push/ng-for-with-push.component';
+import{PostApiComponent} from './components/post-api/post-api.component'
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
   { path: 'ngIf',component: NgIfComponent },
@@ -23,14 +28,17 @@ const appRoutes: Routes = [
   { path: 'ClassBinding',component: ClassbindingComponent },
   { path: 'StyleBinding',component: StyleBindingComponent },
   { path: 'ngStyle',component: NgstyleComponent },
-  
+  { path: 'PushWithngFor',component: NgForWithPushComponent },
   { path: 'EventBinding',component: EventBindingComponent },
   { path: 'EventBinding',component: EventBindingComponent },
   { path: 'InterPolation',component: InterPolationComponent },
   { path: 'TwowayDataBinding',component: TwowayDataBindingComponent },
   { path: 'ReactiveForm',component: ReactformComponent },
-  { path: 'users',component: GetApiComponent },
+  { path: 'GetApiCall',component: GetApiComponent },
+  { path: 'PostApiCall',component: PostApiComponent },
   { path: 'user/:id',component: RouteParameterComponent },
+  { path: 'Parent',component: ParentComponent },
+  { path: 'Child',component: ChildComponent },
 ];
   
 @NgModule({

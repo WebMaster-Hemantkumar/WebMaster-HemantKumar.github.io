@@ -1,0 +1,34 @@
+<p>ng-for-with-push works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+          <input type="text" placeholder="Enter User" #uname>
+           </div>
+           <div class="col-md-3">
+            <button class="btn btn-success" (click)="onCreateUser(uname)">Add User</button>
+           </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Username</th>
+                        <th>Remove</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                     <tr *ngFor="let u of users; index as i">
+                         <td>{{u.name}}</td>
+                     
+                  
+                         <td>
+                             <button class="btn btn-danger" (click)="onRemoveUser(i)">Remove</button>
+                         </td>
+                     </tr>
+                 </tbody>
+            </table>
+        </div>
+    </div>
+</div>

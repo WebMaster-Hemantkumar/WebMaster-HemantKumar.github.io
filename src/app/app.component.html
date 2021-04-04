@@ -11,7 +11,10 @@
           <a class="nav-link " aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item" routerLinkActive="active current">
-          <a class="nav-link" routerLink="/users">ApiCall</a>
+          <a class="nav-link" routerLink="/GetApiCall">GetApiCall</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active current">
+          <a class="nav-link" routerLink="/PostApiCall">PostApiCall</a>
         </li>
         <li class="nav-item" routerLinkActive="active current">
           <a class="nav-link" routerLink="/ReactiveForm">ReactiveForm</a>
@@ -43,13 +46,22 @@
             Directives
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" routerLink="/ngIf">ngIf</a></li>
+            <li routerLinkActive="active current"><a class="dropdown-item" routerLink="/ngIf">ngIf</a></li>
             <li><a class="dropdown-item" routerLink="/ngFor">ngFor</a></li>
-            <li><a class="dropdown-item" routerLink="/ngSwitch">ngSwitch</a></li>
+            <li><a class="dropdown-item" routerLink="/PushWithngFor">PushWithngFor</a></li>
+            <li><a class="dropdown-item" routerLink="/ngSwitch">ngSwitch</a></li><li><a class="dropdown-item" routerLink="/ngStyle">ngStyle</a></li>
+          </ul>
+        </li>
 
-            <li><a class="dropdown-item" routerLink="/ngStyle">ngStyle</a></li>
-
-
+        <li class="nav-item dropdown" routerLinkActive="active current">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Components Commnication
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li routerLinkActive="active current"><a class="dropdown-item" routerLink="/Parent">Paresnt</a></li>
+            <li><a class="dropdown-item" routerLink="/Child">Child</a></li>
+            
           </ul>
         </li>
       </ul>

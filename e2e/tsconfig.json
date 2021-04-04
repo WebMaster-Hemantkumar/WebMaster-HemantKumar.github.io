@@ -9,5 +9,13 @@
       "jasmine",
       "node"
     ]
+  },
+  "angularCompilerOptions": {
+    //   ...
+    "strictPropertyInitialization": false
+    //   ...
   }
+
+
 }
+
