@@ -18,6 +18,8 @@ import { NgForWithPushComponent } from './components/directive/ng-for-with-push/
 import{PostApiComponent} from './components/post-api/post-api.component'
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { PostRequestComponent } from './components/post-request/post-request.component';
+import { SimplePostComponent } from './components/simple-post/simple-post.component';
 
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
@@ -39,7 +41,12 @@ const appRoutes: Routes = [
   { path: 'user/:id',component: RouteParameterComponent },
   { path: 'Parent',component: ParentComponent },
   { path: 'Child',component: ChildComponent },
+  { path: 'PostRequest',component: PostRequestComponent },
+  { path: 'SimplePost',component: SimplePostComponent },
+  
+  
 ];
+
   
 @NgModule({
   imports: [

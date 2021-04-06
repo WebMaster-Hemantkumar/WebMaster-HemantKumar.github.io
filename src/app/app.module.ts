@@ -22,6 +22,8 @@ import { PostApiComponent } from './components/post-api/post-api.component';
 import { FormsModule } from '@angular/forms';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { PostRequestComponent } from './components/post-request/post-request.component';
+import { SimplePostComponent } from './components/simple-post/simple-post.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ChildComponent } from './components/child/child.component';
     PostApiComponent,
     ParentComponent,
     ChildComponent,
+    PostRequestComponent,
+    SimplePostComponent,
     
   ],
   imports: [
