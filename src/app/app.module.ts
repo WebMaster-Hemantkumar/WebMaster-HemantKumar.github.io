@@ -24,6 +24,8 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { PostRequestComponent } from './components/post-request/post-request.component';
 import { SimplePostComponent } from './components/simple-post/simple-post.component';
+import { ContentsComponent } from './components/contents/contents.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { SimplePostComponent } from './components/simple-post/simple-post.compon
     ChildComponent,
     PostRequestComponent,
     SimplePostComponent,
+    ContentsComponent,
+    CardComponent,
     
   ],
   imports: [

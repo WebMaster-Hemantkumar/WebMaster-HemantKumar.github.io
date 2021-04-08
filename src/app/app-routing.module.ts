@@ -20,6 +20,8 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { PostRequestComponent } from './components/post-request/post-request.component';
 import { SimplePostComponent } from './components/simple-post/simple-post.component';
+import { ContentsComponent } from './components/contents/contents.component';
+import { CardComponent } from './components/card/card.component';
 
 const appRoutes: Routes = [
   { path: 'crisis-center', component: AppComponent },
@@ -43,6 +45,8 @@ const appRoutes: Routes = [
   { path: 'Child',component: ChildComponent },
   { path: 'PostRequest',component: PostRequestComponent },
   { path: 'SimplePost',component: SimplePostComponent },
+  { path: 'Content',component: ContentsComponent },
+  { path: 'Card',component: CardComponent },
   
   
 ];
