@@ -26,6 +26,9 @@ import { PostRequestComponent } from './components/post-request/post-request.com
 import { SimplePostComponent } from './components/simple-post/simple-post.component';
 import { ContentsComponent } from './components/contents/contents.component';
 import { CardComponent } from './components/card/card.component';
+import { ContainerComponent } from './components/container/container.component';
+import { ParentComponentComponent } from './components/parent-component/parent-component.component';
+import { ChildComponentComponent } from './components/child-component/child-component.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,9 @@ import { CardComponent } from './components/card/card.component';
     SimplePostComponent,
     ContentsComponent,
     CardComponent,
+    ContainerComponent,
+    ParentComponentComponent,
+    ChildComponentComponent,
     
   ],
   imports: [

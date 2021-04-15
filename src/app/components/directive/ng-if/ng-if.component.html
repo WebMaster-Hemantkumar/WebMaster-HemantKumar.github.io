@@ -1,9 +1,11 @@
 <div class="container">
-  <h4 *ngIf="isValid,else logout" [style.color]="isValid  ? 'red' : 'green' ">Welcome to Profile</h4>
-  </div>
+ <div *ngIf="isValid,then thenblock else logout" ></div>
+  <ng-template #thenblock>
+   <h1 [style.color]="isValid  ? 'red' : 'green' ">Welcome to Profile</h1>
+  </ng-template>
   <ng-template #logout>
       <h4>Is User is NotLogin</h4>
   </ng-template>
   <button (click)="clickForLogin()">clickForLogin</button>
-  
+  </div>
 <!-- condition based data -->
